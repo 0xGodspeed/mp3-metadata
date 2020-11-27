@@ -19,7 +19,7 @@ song_cover = a["tracks"]["items"][0]["album"]["images"][0]["url"]
 track_number = str(a["tracks"]["items"][0]["track_number"])
 total_tracks = a["tracks"]["items"][0]["album"]["total_tracks"]
 
-print(song_name, album_name, artist_name, album_year, f"{track_number}/{total_tracks}")
+print(song_name, album_name, artist_name, album_year, track_number)
 
 audio = MP3(fname, ID3=ID3)
 
@@ -45,4 +45,3 @@ audio.tags.add(APIC(mime='image/jpeg',type=3,desc=u'Cover',data=open('temp.png',
 audio.save()
 tags.save(fname)
 os.rename(fname, f"{track_number} {song_name}.mp3")
-os.remove("temp.png")
