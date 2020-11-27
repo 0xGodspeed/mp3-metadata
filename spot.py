@@ -45,3 +45,4 @@ audio.tags.add(APIC(mime='image/jpeg',type=3,desc=u'Cover',data=open('temp.png',
 audio.save()
 tags.save(fname)
 os.rename(fname, f"{track_number} {song_name}.mp3")
+os.remove("temp.png")
