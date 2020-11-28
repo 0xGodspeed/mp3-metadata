@@ -26,8 +26,6 @@ audio = MP3(fname, ID3=ID3)
 r = requests.get(song_cover, allow_redirects=True)
 open('temp.png', "wb").write(r.content)
 
-picture_path = song_cover
-
 try: 
     tags = ID3(fname)
 except ID3NoHeaderError:
