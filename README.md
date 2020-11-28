@@ -1,5 +1,5 @@
 # mp3-metadata
-Adds metadata to mp3 using spotipy and also renames the file.
+Adds metadata to mp3 using Spotify API and also renames the file.
 
 Uses spotipy library to access Spotify API to get song title, album name, artist name, track number, release year and album cover.
 Uses mutagen to edit metadata of the mp3 file.
