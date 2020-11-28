@@ -6,4 +6,4 @@ Uses mutagen to edit metadata of the mp3 file.
 Renames the mp3 file to format - "<track number> <track title>"
 To add the cover image to the file, it saves the cover png temporarily in the folder.
 
-Requirements - mutagen
+Requirements - mutagen, spotipy.
